@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!---Add responsiveness----->
+        <title>SL Medicare</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">  <!---connect css file--->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">          
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    </head>
+<body>
+     <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SLMC-BMI</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>About us</h1>
+
+     </section>
+<!-------------About us content----------------->
+
+<section class="about-us">
+  <div class="row">
+      <div class="about-col">
+          <h1>we are the minitry of IT community</h1>
+          <p>The main purpose of introducing the Honour code is to improve the discipline of
+            the UCSC students. The undergraduate students are required to adhere to the
+            Honour Code during their studentship at UCSC.Therefore, you are required to place 
+           </p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+      </div>
+      <br>
+      <div class="about-col">
+            <img src="images/about.jpg">
+      </div>
+  </div>
+
+</section>
+
+<!-------Footer------------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+    <p>Made by SLMEDICARE@2021 <i class="fa fa-heart-o"></i></p>
+</section>
+
+<!--Javascript for Togle Menu--->
+<script>
+       var navLinks = document.getElementById("navLinks");
+       
+       function showMenu(){
+           navLinks.style.right = "0";
+       }
+       function hideMenu(){
+           navLinks.style.right ="-200px";
+       }
+
+</script>
+
+
+</body>
+</html>
